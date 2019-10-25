@@ -1,0 +1,133 @@
+<% include ../partials/head %>
+<% include ../partials/header %>
+<% include ../partials/nav %>
+<main>
+
+    <h1 class="productHeading">Produktkategori</h1>
+    <p class="productText">Kategoripræsentation - Stilton dolcelatte caerphilly. Brie port-salut
+        taleggio caerphilly emmental halloumi cheese and biscuits cheesy grin.
+        Melted cheese fromage who moved my cheese melted cheese macaroni
+        cheese brie ricotta jarlsberg. Cheese triangles pepper jack cauliflower
+        cheese smelly cheese bavarian bergkase danish fontina</p>
+
+
+    <section>
+        <ul id="cardList">
+            <!-- <li class="cardList__list">
+                <article class="cardList__card">
+                    <img class="productImg" src="https://via.placeholder.com/100" alt="caption">
+                    <div class="cardInfo">
+                        <h1>Produktnavn</h1>
+                        <p>Danish fontina pecorino cheese slices. Everyone loves cheddar brie lancashire squirty cheese
+                            monterey jack babybel mozzarella. Blue castello edam ricotta the big cheese stinking bishop
+                            cheese and biscuits cheesy feet pecorino. Camembert de normandie stinking bishop melted
+                            cheese ricotta cottage cheese camembert de normandie fromage taleggio. Airedale cheese
+                            and biscuits mascarpone blue castello.</p>
+                        <table>
+                            <tr>
+                                <td>land</td>
+                                <td>danmark</td>
+                            </tr>
+                            <tr>
+                                <td>vægt</td>
+                                <td>250g</td>
+                            </tr>
+                            <tr>
+                                <td>pris</td>
+                                <td>DKK 65,75</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </article>
+            </li> -->
+            <!--  <li class="cardList__list">
+                <article class="cardList__card">
+                    <img class="productImg" src="https://via.placeholder.com/100" alt="caption">
+                    <div class="cardInfo">
+                        <h1>Produktnavn</h1>
+                        <p>Danish fontina pecorino cheese slices. Everyone loves cheddar brie lancashire squirty cheese
+                            monterey jack babybel mozzarella. Blue castello edam ricotta the big cheese stinking bishop
+                            cheese and biscuits cheesy feet pecorino. Camembert de normandie stinking bishop melted
+                            cheese ricotta cottage cheese camembert de normandie fromage taleggio. Airedale cheese
+                            and biscuits mascarpone blue castello.</p>
+                        <table>
+                            <tr>
+                                <td>land</td>
+                                <td>danmark</td>
+                            </tr>
+                            <tr>
+                                <td>vægt</td>
+                                <td>250g</td>
+                            </tr>
+                            <tr>
+                                <td>pris</td>
+                                <td>DKK 65,75</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </article>
+            </li>
+            <li class="cardList__list">
+                <article class="cardList__card">
+                    <img class="productImg" src="https://via.placeholder.com/100" alt="caption">
+                    <div class="cardInfo">
+                        <h1>Produktnavn</h1>
+                        <p>Danish fontina pecorino cheese slices. Everyone loves cheddar brie lancashire squirty cheese
+                            monterey jack babybel mozzarella. Blue castello edam ricotta the big cheese stinking bishop
+                            cheese and biscuits cheesy feet pecorino. Camembert de normandie stinking bishop melted
+                            cheese ricotta cottage cheese camembert de normandie fromage taleggio. Airedale cheese
+                            and biscuits mascarpone blue castello.</p>
+                        <table>
+                            <tr>
+                                <td>land</td>
+                                <td>danmark</td>
+                            </tr>
+                            <tr>
+                                <td>vægt</td>
+                                <td>250g</td>
+                            </tr>
+                            <tr>
+                                <td>pris</td>
+                                <td>DKK 65,75</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </article>
+            </li> -->
+        </ul>
+    </section>
+
+</main>
+
+<template id="cardTemplate">
+    <li>
+        <article class="cardList__card">
+            <img class="productImg" src="https://via.placeholder.com/100" alt="caption">
+            <div class="cardInfo">
+                <h1>Produktnavn</h1>
+                <p></p>
+                <table class="table">
+                    <tr class="table-land">
+                        <td class="table-country-title">land</td>
+                        <td><span class="table-country-name"></span></td>
+                    </tr>
+                    <tr class="table-weight">
+                        <td class="table-weight-title">vægt</td>
+                        <td><span class="table-weight-amount">g</span></td>
+                    </tr>
+                    <tr class="table-price">
+                        <td class="table-price-title">pris</td>
+                        <td>DKK <span class="table-price-amount"> </span></td>
+                    </tr>
+                </table>
+                <a href="">Læs mere</a>
+            </div>
+    </li>
+</template>
+
+<script src="/assets/javascript/get-products.js"></script>
+
+<% include ../partials/after-main %>

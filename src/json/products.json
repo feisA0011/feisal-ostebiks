@@ -1,0 +1,67 @@
+[{
+        "sku": "24423232",
+        "navn": "Feta",
+        "beskrivelse": [
+            "Danish fontina pecorino cheese slices. Everyone loves cheddar brie lancashire squirty cheese monterey jack babybel mozzarella. Blue castello edam ricotta the big cheese stinking bishop cheese and biscuits cheesy feet pecorino. Camembert de normandie stinking bishop melted cheese ricotta cottage cheese camembert de normandie fromage taleggio. Airedale cheese and biscuits mascarpone blue castello.",
+            "dolor sit amet"
+        ],
+        "land": "Grækenland",
+        "pris": "34.55",
+        "vægt": "250",
+        "billeder": [
+            "feta01.jpg",
+            "feta02.jpg",
+            "feta03.jpg",
+            "feta04.jpg"
+        ]
+    },
+    {
+        "sku": "22323432",
+        "navn": "brie",
+        "beskrivelse": [
+            "lorem ipsum",
+            "dolor sit amet"
+        ],
+        "land": "Dansk",
+        "pris": "34.55",
+        "vægt": "250",
+        "billeder": [
+            "brie01.jpg",
+            "brie02.jpg",
+            "brie03.jpg",
+            "brie04.jpg"
+        ]
+    }, {
+        "sku": "23433453",
+        "navn": "Gouda",
+        "beskrivelse": [
+            "lorem ipsum",
+            "dolor sit amet"
+        ],
+        "land": "Holland",
+        "pris": "34.55",
+        "vægt": "250",
+        "billeder": [
+            "gouda01.jpg",
+            "gouda02.jpg",
+            "gouda03.jpg",
+            "gouda04.jpg"
+        ]
+    }, {
+        "sku": "34534535",
+        "navn": "Mozarella",
+        "beskrivelse": [
+            "lorem ipsum",
+            "dolor sit amet"
+        ],
+        "land": "Italien",
+        "pris": "34.55",
+        "vægt": "250",
+        "billeder": [
+            "mozzarella01.jpg",
+            "mozzarella02.jpg",
+            "mozzarella03.jpg",
+            "mozzarella04.jpg"
+        ]
+    }
+]

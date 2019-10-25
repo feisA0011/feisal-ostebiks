@@ -1,0 +1,32 @@
+@import 'variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+@import 'primary-navigation';
+@import 'frontPage-main';
+@import 'productsPage-main';
+@import 'singleProductPage-main';
+
+
+
+
+a {
+    color: red;
+
+    &:hover {
+        color: beige;
+    }
+}

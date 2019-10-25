@@ -1,0 +1,31 @@
+.primary-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 3rem;
+    background: #000;
+}
+
+.frontPage {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+
+    li {
+        padding: 0 1em;
+
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+    }
+
+}

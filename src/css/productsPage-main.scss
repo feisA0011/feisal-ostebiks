@@ -1,0 +1,38 @@
+.productHeading {
+    margin: 3rem 2rem 0;
+}
+
+.productText {
+    width: 480px;
+    margin: 1rem 2rem 3rem;
+}
+
+
+
+.cardList {
+    width: 850px;
+    margin: 1rem 2rem;
+    list-style: none;
+}
+
+.productImg {
+    width: 400px;
+    height: 300px;
+}
+
+.cardList__card {
+    display: grid;
+    grid-template-columns: 400px 700px;
+    gap: 30px;
+    margin: 2rem;
+}
+
+.cardList__list {
+    margin: 2rem 0;
+}
+
+.cardInfo {
+
+    display: grid;
+    gap: 1rem;
+}

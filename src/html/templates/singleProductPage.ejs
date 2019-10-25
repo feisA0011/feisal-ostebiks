@@ -1,0 +1,92 @@
+<% include ../partials/head %>
+<% include ../partials/header %>
+<% include ../partials/nav %>
+
+<main>
+    <h1 class="productName">productname</h1>
+    <article class="cardList__card">
+
+        <div>
+            <img class="productImg" src="https://via.placeholder.com/100" alt="">
+            <div class="productSlide">
+                <img class="productSlideImg" src="https://via.placeholder.com/100" alt="">
+                <img class="productSlideImg" src="https://via.placeholder.com/100" alt="">
+                <img class="productSlideImg" src="https://via.placeholder.com/100" alt="">
+            </div>
+        </div>
+        <div class="productText">
+            <div class="texts">
+
+                <p>Fromage smelly cheese cheesecake. Fromage emmental squirty cheese
+                    monterey jack swiss smelly cheese goat queso. Cheddar cut the cheese
+                    say cheese squirty cheese camembert de normandie emmental fondue
+                    cauliflower cheese. Pecorino cheddar cheese and biscuits emmental
+                    cheese and biscuits cheddar swiss cheddar. Cheese and wine bocconcini
+                    cheesecake cheese triangles. </p>
+                <p>Parmesan feta cream cheese. Cottage cheese cheesy grin cheddar squirty
+                    cheese goat the big cheese pepper jack melted cheese. Cheesy grin
+                    bocconcini ricotta fromage frais ricotta everyone loves cut the cheese red
+                    leicester. Cheesy feet taleggio jarlsberg cheesecake cheese triangles the
+                    big cheese caerphilly mascarpone. Cream cheese danish fontina when the
+                    cheese comes out everybody's happy.
+                </p>
+            </div>
+            <table class="table">
+                <tbody class="tbody">
+                    <tr class="land">
+                        <td class="country-title">land</td>
+                        <td><span class=-country-name"></span></td>
+                    </tr>
+                    <tr class="weight">
+                        <td class="weight-title">vægt</td>
+                        <td><span class="weight-amount">g</span></td>
+                    </tr>
+                    <tr class="price">
+                        <td class="price-title">pris</td>
+                        <td>DKK <span class="price-amount"> </span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </article>
+    <div class="extraSec">
+        <h2 class="extraImgTitle">Du er måske også interesseret i dette</h2>
+        <div class="extraImgs">
+            <img class="extraImg" src="https://via.placeholder.com/100" alt="caption">
+            <img class="extraImg" src="https://via.placeholder.com/100" alt="caption">
+            <img class="extraImg" src="https://via.placeholder.com/100" alt="caption">
+            <img class="extraImg" src="https://via.placeholder.com/100" alt="caption">
+
+        </div>
+
+    </div>
+
+</main>
+<template id="cardTemplate">
+    <article class="cardList__card">
+        <img class="productImg" src="https://via.placeholder.com/100" alt="caption">
+        <div class="cardInfo">
+            <h1>Produktnavn</h1>
+            <p></p>
+            <table class="table">
+                <tr class="table-land">
+                    <td class="table-country-title">land</td>
+                    <td><span class="table-country-name"></span></td>
+                </tr>
+                <tr class="table-weight">
+                    <td class="table-weight-title">vægt</td>
+                    <td><span class="table-weight-amount">g</span></td>
+                </tr>
+                <tr class="table-price">
+                    <td class="table-price-title">pris</td>
+                    <td>DKK <span class="table-price-amount"> </span></td>
+                </tr>
+            </table>
+            <a href="">Læs mere</a>
+        </div>
+        </li>
+</template>
+<script src="/assets/javascript/get-products"></script>
+<% include ../partials/after-main %>

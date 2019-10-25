@@ -1,0 +1,33 @@
+.productSlide {
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em 0;
+    gap: 1em;
+}
+
+.productText {
+    display: grid;
+    gap: 3em 0;
+}
+
+.texts {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 1fr;
+    gap: 2em 0;
+
+}
+
+.extraSec {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+}
+
+.extraImgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    gap: 2em;
+}

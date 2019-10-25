@@ -1,0 +1,58 @@
+.frontPage-main {
+
+    height: 100vh;
+    background: url("/assets/images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+// heading style
+
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.all-headings {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 5rem;
+    grid-column: 2;
+    place-content: end;
+    padding: 2rem;
+
+}
+
+.heading {
+    font-size: 4.2rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    color: #A2A374;
+    text-transform: capitalize;
+    -webkit-text-stroke: 1px black;
+}
+
+.heading-2 {
+    justify-self: end;
+    color: $primaryColor;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.infoSec {
+    width: 570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #B8BBBB;
+    padding: 4.5rem 2rem 4.5rem 2rem;
+    grid-column: 2;
+
+
+}
