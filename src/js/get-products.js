@@ -16,10 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 clone.querySelector("a").href = `/singleProductPage/?sku=${product.sku}`
                 clone.querySelector(".productImg").src = `/assets/images/${product.billeder[0]}`
 
-
-
-
-
                 list.appendChild(clone);
 
             })
