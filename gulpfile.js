@@ -108,7 +108,7 @@ gulp.task('dev', function (done) {
 gulp.task("build", function (done) {
     html(done);
     scss(done);
-    javascript(done);
+    babelJs(done);
     json(done);
     images(done);
     done();
