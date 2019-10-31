@@ -3,24 +3,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
     const params = new URLSearchParams(window.location.search);
     const skuId = params.get('sku')
 
     const db = firebase.firestore();
-
     let docRef = db.collection('wine').doc(skuId)
+
+    const container = document.getElementsByClassName('page')[0];
     docRef.get().then(function (doc) {
 
-        const container = document.getElementsByClassName('page')[0];
-
         container.querySelector('.productName').innerText = doc.data().name;
-        container.querySelector('.productImg').src = `/assets/images/${doc.data().image}`
+        // container.querySelector('.productImg').src = `/assets/images/${doc.data().image}`
         container.querySelector('.country-name').innerText = doc.data().country;
         container.querySelector('.region').innerText = doc.data().region;
         container.querySelector('.price-amount').innerText = doc.data().price;
-        // container.querySelectorAll('.productSlideImg')[0].src = `/assets/images/${doc.data().image[1]}`
-        // container.querySelectorAll('.productSlideImg')[1].src = `/assets/images/${doc.data().image[2]}`
-        // container.querySelectorAll('.productSlideImg')[2].src = `/assets/images/${doc.data().image[3]}`
 
         const productSlide = container.querySelector('.productSlide')
         const template = document.getElementById('template')
@@ -30,32 +27,41 @@ document.addEventListener('DOMContentLoaded', function () {
             productSlide.appendChild(clone);
         });
 
+    });
+
+    let ratings = document.querySelector('.rating')
+    let star = document.querySelectorAll('.star')
+
+    star.forEach(element => {
+        element.addEventListener('click', () => {
+            const stars = parseInt(element.dataset.rating);
+            console.log(stars)
+            docRef.collection('ratings')
+                .doc('rating')
+                .update({
+                    userRating: firebase.firestore.FieldValue.increment(1),
+                    totalStars: firebase.firestore.FieldValue.increment(stars)
+                });
+        })
 
 
-    })
+        docRef.collection('ratings')
+            .doc('rating')
 
-    // fetch("/data/products.json")
-    //     .then(response => response.json())
-    //     .then(function (data) {
-    //         data.forEach(function (product) {
-    //             console.log(product)
-    //             const sku = new URL(window.location).searchParams.get("sku")
-    //             if (product.sku != sku) return;
-    //             const container = document.getElementsByClassName('page')[0];
-    //             container.querySelector('.productName').innerText = product.navn;
-    //             container.querySelector('.productImg').src = `/assets/images/${product.billeder[0]}`
-    //             container.querySelectorAll('.productSlideImg')[0].src = `/assets/images/${product.billeder[1]}`
-    //             container.querySelectorAll('.productSlideImg')[1].src = `/assets/images/${product.billeder[2]}`
-    //             container.querySelectorAll('.productSlideImg')[2].src = `/assets/images/${product.billeder[3]}`
-    //             container.querySelector('.country-name').innerText = product.land;
-    //             container.querySelector('.weight-amount').innerText = product.vægt;
-    //             container.querySelector('.price-amount').innerText = product.pris;
+            .onSnapshot(function (doc) {
+                console.log(doc.data())
+                const userRating = doc.data().userRating;
+                const totalStars = doc.data().totalStars;
+                const average = totalStars / userRating;
+                console.log(average)
+                container.querySelector('h3').innerText = average.toFixed(1)
 
-    //             container.querySelectorAll('.productSlideImg').forEach(img => {
-    //                 img.addEventListener('click', function () {
-    //                     container.querySelector('.productImg').src = this.src;
-    //                 })
-    //             });
-    //         });
-    //     })
+
+            })
+
+
+
+    });
+
+
 })

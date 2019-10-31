@@ -12,9 +12,38 @@
 .productSlide {
     width: 400px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: 100 1fr;
     padding: 1em 0;
     gap: 1em;
+}
+
+.productSlide img:nth-child(1) {
+    height: 300px;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.stars {
+    list-style: none;
+    border: black;
+    color: wheat;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* .star:hover~* {
+    cursor: pointer;
+    color: green;
+
+} */
+
+.stars li:hover,
+.stars li:hover~li {
+    cursor: pointer;
+    color: green;
+
 }
 
 .productText {

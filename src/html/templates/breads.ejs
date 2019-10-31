@@ -1,0 +1,50 @@
+<% include ../partials/head %>
+<% include ../partials/header %>
+<% include ../partials/nav %>
+<main>
+
+    <h1 class="productHeading">Produktkategori</h1>
+    <p class="productText">Kategoripræsentation - Stilton dolcelatte caerphilly. Brie port-salut
+        taleggio caerphilly emmental halloumi cheese and biscuits cheesy grin.
+        Melted cheese fromage who moved my cheese melted cheese macaroni
+        cheese brie ricotta jarlsberg. Cheese triangles pepper jack cauliflower
+        cheese smelly cheese bavarian bergkase danish fontina</p>
+
+
+    <section>
+        <ul id="cardList">
+
+        </ul>
+    </section>
+
+</main>
+
+<template id="cardTemplate">
+    <li>
+        <article class="cardList__card">
+            <img class="productImg" src="https://via.placeholder.com/100" alt="caption">
+            <div class="cardInfo">
+                <h1>Produktnavn</h1>
+                <p></p>
+                <table class="table">
+                    <tr class="table-land">
+                        <td class="table-country-title">land</td>
+                        <td><span class="table-country-name"></span></td>
+                    </tr>
+                    <tr class="table-weight">
+                        <td class="table-region-title">region</td>
+                        <td><span class="region"></span></td>
+                    </tr>
+                    <tr class="table-price">
+                        <td class="table-price-title">pris</td>
+                        <td>DKK <span class="table-price-amount"> </span></td>
+                    </tr>
+                </table>
+                <a href="">Læs mere</a>
+            </div>
+    </li>
+</template>
+
+<script src="/assets/javascript/fs-get-products.js"></script>
+
+<% include ../partials/after-main %>
